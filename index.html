@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo da memória</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script charset="utf8">
+    var app = { nrComponentes:0 };
+    app.getComponente = function(nome) {
+        if (!app[nome]) {
+            app[nome] = {};
+            app[app.nrComponentes++] = nome;
+        }
+        return app[nome];
+    };
+</script>
+<div id="tabuleiro">
+    <span id="boxbuttons">
+      <span class="button">
+        <span id="time"></span>
+      </span>
+      <span  id="init" class="button">Embaralhar figuras</span>
+      <span id="reset" class="button">Reiniciar jogo</span>
+    </span>
+    <div id="boxcard"></div>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

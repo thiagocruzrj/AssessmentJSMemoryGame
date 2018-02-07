@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: 18px Verdana;
+	color: #FFF;
+	background: darkcyan;
+}
+#tabuleiro {
+	margin: 0 auto;
+	width: 640px;
+}
+#boxcard {
+	margin: 10px 0 0;
+}
+#boxcard div{
+	float: left;
+	width: 140px;
+	height: 140px;
+	margin: 3px;
+	padding: 3px;
+	border: 2px solid black;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 0 1px 5px rgba(0,0,0,.5);
+}
+#boxcard div img {
+	border-radius: 10px;
+	text-align: center;
+}
+#boxbuttons {
+	text-align: center;
+	margin: 20px;
+	display: block;
+}
+#boxbuttons .button {
+	text-transform: uppercase;
+	background: #929292;
+	padding: 5px 10px;
+	margin: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+#boxbuttons .button:hover {
+	background: #929292;
+}
+img {
+	width: 130px;
+	height: 130px;
+}
+.cartas {
+	background-image: none;
+	text-align: center;
+	background-repeat: no-repeat;
+}
